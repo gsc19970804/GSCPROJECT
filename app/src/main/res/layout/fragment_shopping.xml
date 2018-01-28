@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.taobaodemo.fragment.PageFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#ff00"
+        android:gravity="center"
+        android:text="购物车"
+        android:textSize="20sp" />
+
+    <ExpandableListView
+        android:id="@+id/erji"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"></ExpandableListView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <CheckBox
+            android:id="@+id/allchecked"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="全选/反选" />
+
+        <TextView
+            android:id="@+id/contprice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="0.00"
+            android:textColor="#ff00"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/contprice"
+            android:gravity="center"
+            android:text="总价:"
+            android:textColor="#ff00"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/jiesuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="结算(0)"
+            android:textColor="#ff00" />
+
+        <Button
+            android:id="@+id/del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/jiesuan"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#ff00" />
+
+    </RelativeLayout>
+</LinearLayout>

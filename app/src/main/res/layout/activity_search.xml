@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE6E4E4"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.taobaodemo.search.SearchActivity">
+
+    <RelativeLayout
+        android:id="@+id/sousuo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <EditText
+            android:id="@+id/searchgoods"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:hint="请输入商品名称"
+            android:singleLine="true"
+            android:textColorHint="#FFD7D3D3" />
+
+        <ImageView
+            android:id="@+id/tosearch"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/search" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lisijilu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="搜索记录"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/searchlist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"></ListView>
+
+    <Button
+        android:id="@+id/clerns"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="清除历史搜索"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+</LinearLayout>
